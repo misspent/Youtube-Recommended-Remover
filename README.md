@@ -11,5 +11,5 @@ This is a Tampermonkey/Greasemonkey script. When enabled, hover over a YouTube v
 
 <h1 align="center"> ⭐ Update </h1>
 
-<ins>**118/11/2022**</ins>: Added another "keybind" that should make it future-proof because, for some reason, YouTube likes changing the name of selectors.  
+<ins>**18/11/2022**</ins>: Added another "keybind" that should make it future-proof because, for some reason, YouTube likes changing the name of selectors.  
 <ins>**11/25/2021**</ins>: YouTube changed its page structure, so I updated the script. Also add support to hide videos on right side of the video watching page.  
