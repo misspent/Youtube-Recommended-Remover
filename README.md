@@ -7,7 +7,7 @@ This is a Tampermonkey/Greasemonkey script. When enabled, hover over a YouTube v
 <h1 align="center"> 📜 Keybinds </h1>
 
 `Shift key` = "Not interested" & "Recommend less like this"  
-`Alt key` = "Don't recommend this channel"  
+`Ctrl key` = "Don't recommend this channel"  
 
 <h1 align="center"> ⭐ Update </h1>
 
