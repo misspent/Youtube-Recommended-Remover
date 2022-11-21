@@ -34,7 +34,7 @@
                             $("yt-formatted-string:contains('Not interested')").click();
                         }, 50);
                     }
-                    else if(e.altKey) {
+                    else if(e.ctrlKey) {
                         $(this).closest("ytd-rich-item-renderer").find("button.style-scope.yt-icon-button").click();
                         setTimeout(function(){
                             $(`yt-formatted-string:contains("Don't recommend channel")`).click();
