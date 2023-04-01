@@ -1,11 +1,12 @@
 // ==UserScript==
-// @name        I'm not interested in this fucking YouTube video!
-// @namespace   http://www.iamnotinterestedinthisfuckingyoutubevideo.com
-// @version     2.0
-// @description I'm not interested in this fucking YouTube video!
-// @match       *://www.youtube.com/*
-// @run-at      document-end
-// @require     https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js
+// @name         I'm not interested in this fucking YouTube video!
+// @namespace    http://www.iamnotinterestedinthisfuckingyoutubevideo.com
+// @version      2.0
+// @description  I'm not interested in this fucking YouTube video!
+// @icon         https://www.youtube.com/s/desktop/03f86491/img/favicon.ico
+// @match        *://www.youtube.com/*
+// @run-at       document-end
+// @require      https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js
 // ==/UserScript==
 
 (function() {
@@ -16,7 +17,7 @@
         setInterval((function () {
             let cells = $("ytd-rich-item-renderer.style-scope.ytd-rich-grid-row:not(.fucked)");
             if(cells.length == 0) {
-                console.log("Can't find any cells to check");
+                return; // stop the function if there are no cells to check
             }
             cells.each(function(){
                 let cell = $(this);
