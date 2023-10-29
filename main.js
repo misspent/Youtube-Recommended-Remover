@@ -21,7 +21,7 @@
             }
             cells.each(function(){
                 let cell = $(this);
-                let temp = cell.find("ytd-thumbnail");
+                let temp = cell.find("#thumbnail");
                 temp.hover(function(e){
                     if(e.shiftKey) { // Do not recommened in home page section v2
                         $(this).closest("ytd-rich-item-renderer").find("button.style-scope.yt-icon-button").click();
