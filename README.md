@@ -11,5 +11,6 @@ This is a Tampermonkey/Greasemonkey script. When enabled, hover over a YouTube v
 
 <h1 align="center"> ⭐ Update </h1>
 
+<ins>**02/07/2024**</ins>: Complete code rewrite that makes it more optimized (imo), customizable, and easy to follow. I'll hopefully work on it as time goes on, but we'll see. I advise using [I_am_not_interested_in_this_youtube_video](https://github.com/0x7FFFFFFFFFFFFFFF/I_am_not_interested_in_this_youtube_video) if this one isn't to your liking.
 <ins>**18/11/2022**</ins>: Added another "keybind" that should make it future-proof because, for some reason, YouTube likes changing the name of selectors.  
-<ins>**11/25/2021**</ins>: YouTube changed its page structure, so I updated the script. Also add support to hide videos on right side of the video watching page.  
+<ins>**25/11/2021**</ins>: YouTube changed its page structure, so I updated the script. Also add support to hide videos on right side of the video watching page.  
