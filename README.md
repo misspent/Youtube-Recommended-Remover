@@ -2,7 +2,7 @@
 
 This is a Tampermonkey/Greasemonkey script. When enabled, hover over a YouTube video's thumbnail (the image icon of the video) with your mouse while holding down assigned key.
 
-![]()
+![Preview](https://raw.githubusercontent.com/0x7FFFFFFFFFFFFFFF/I_am_not_interested_in_this_youtube_video/main/youtube.gif)
 
 <h1 align="center"> 📜 Keybinds </h1>
 
