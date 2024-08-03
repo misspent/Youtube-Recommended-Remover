@@ -26,7 +26,7 @@
 
     const pageSelectors = {
         home: {
-            cellSelector: "ytd-rich-item-renderer.style-scope.ytd-rich-grid-row:not(.Not-Interested)",
+            cellSelector: "ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:not(.Not-Interested)",
             itemSelector: "ytd-rich-item-renderer"
         },
         watch: {
@@ -34,7 +34,7 @@
             itemSelector: "ytd-compact-video-renderer"
         },
         subscriptions: {
-            cellSelector: "ytd-rich-item-renderer.style-scope.ytd-rich-grid-row:not(.Not-Interested)",
+            cellSelector: "ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:not(.Not-Interested)",
             itemSelector: "ytd-rich-item-renderer"
         },
         playlist: {
@@ -46,11 +46,11 @@
     const actions = {
         home: {
             shiftKey: 'Not interested',
-            altKey: "Save to Watch later"
+            altKey: "Don't recommend channel"
         },
         watch: {
             shiftKey: 'Not interested',
-            altKey: "Save to Watch later"
+            altKey: "Don't recommend channel"
         },
         subscriptions: {
             shiftKey: 'Hide',
@@ -58,7 +58,7 @@
         },
         playlist: {
             shiftKey: 'Remove from',
-            altKey: "Don't recommend channel"
+            altKey: "Move to top"
         }
     };
 
@@ -83,7 +83,11 @@
             if (button.length) {
                 button.click();
                 setTimeout(function() {
-                    const actionButton = $(`yt-formatted-string:contains('${actionText}')`);
+                    // Use a case-insensitive regular expression that ignores apostrophes
+                    const actionRegex = new RegExp(actionText.replace(/'/g, "[''']?"), 'i');
+                    const actionButton = $('yt-formatted-string').filter(function() {
+                        return actionRegex.test($(this).text());
+                    });
                     if (actionButton.length) {
                         actionButton.click();
                     } else {
@@ -146,6 +150,7 @@
 
     $(document).ready(init);
 })();
+
 
 
 
