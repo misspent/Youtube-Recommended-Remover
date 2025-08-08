@@ -83,7 +83,7 @@
 
         // Wait for the menu to show and then click on the action item
         setTimeout(() => {
-            const actionItems = document.querySelectorAll('yt-list-item-view-model > .yt-list-item-view-model-wiz__container--in-popup');
+            const actionItems = document.querySelectorAll('span');    // How it extracts which one to click (was: yt-list-item-view-model > .yt-list-item-view-model-wiz__container--in-popup)
             const targetAction = Array.from(actionItems).find(item =>
                 new RegExp(actionText, 'i').test(item.textContent)
             );
